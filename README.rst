@@ -26,6 +26,15 @@ Oracle::
 
     create_engine("jdbcapi+oraclejdbc://username:password@HOST:1521/Database")
 
+Salesforce::
+
+    First, download the salesforce driver from https://github.com/wise-coders/salesforce-jdbc-driver/ and unzip its contents into a folder.
+
+    Set environment variable 'export CLASSPATH=<path>/antlr-runtime-3.5.2.jar:<path>/commons-beanutils-1.9.4.jar:<path>/commons-collections-3.2.2.jar:<path>/commons-collections4-4.4.jar:<path>/commons-logging-1.2.jar:<path>/dbschema-salesforce-jdbc1.2.jar:<path>/force-partner-api-52.2.0.jar:<path>/force-wsc-52.2.0.jar:<path>/h2-1.4.200.jar:<path>/jackson-annotations-2.12.3.jar:<path>/jackson-core-2.12.3.jar:<path>/jackson-databind-2.12.3.jar:<path>/ST4-4.3.jar'
+    where <path> is where you unzipped the contents of the binary zip file downloaded.
+
+    create_engine("jdbcapi+sfjdbc://jdbc:dbschema:saleforce://username=lulu@yahoo.com;password=somepasswordwithtoken")
+
 GenericJDBCConnection::
 
         Set an environment variable `JDBC_DRIVER_PATH`

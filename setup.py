@@ -36,6 +36,7 @@ setup(
         "sqlalchemy.dialects": [
             "jdbcapi.pgjdbc = sqlalchemy_jdbcapi.pgjdbc:PGJDBCDialect",
             "jdbcapi.oraclejdbc = sqlalchemy_jdbcapi.oraclejdbc:OracleJDBCDialect",
+            "jdbcapi.sfjdbc = sqlalchemy_jdbcapi.sfjdbc:SalesforceJDBCDialect",
         ]
     },
 )
