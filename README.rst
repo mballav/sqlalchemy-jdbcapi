@@ -33,7 +33,7 @@ Salesforce::
     Set environment variable 'export CLASSPATH=<path>/antlr-runtime-3.5.2.jar:<path>/commons-beanutils-1.9.4.jar:<path>/commons-collections-3.2.2.jar:<path>/commons-collections4-4.4.jar:<path>/commons-logging-1.2.jar:<path>/dbschema-salesforce-jdbc1.2.jar:<path>/force-partner-api-52.2.0.jar:<path>/force-wsc-52.2.0.jar:<path>/h2-1.4.200.jar:<path>/jackson-annotations-2.12.3.jar:<path>/jackson-core-2.12.3.jar:<path>/jackson-databind-2.12.3.jar:<path>/ST4-4.3.jar'
     where <path> is where you unzipped the contents of the binary zip file downloaded.
 
-    create_engine("jdbcapi+sfjdbc://jdbc:dbschema:saleforce://username=lulu@yahoo.com;password=somepasswordwithtoken")
+    create_engine("jdbcapi+sfjdbc://jdbc:salesforce:User=<username>;Password=<password>;Security Token=<token>")
 
 GenericJDBCConnection::
 
